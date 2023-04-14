@@ -41,20 +41,23 @@ class RPS:
             print('You won')
 
     def play(self):
-        number_of_rounds = self.num_of_rounds #How can I avoid this repetition?
-        while self.num_of_rounds > 0:
+        number_of_rounds = self.start_game()
+        while number_of_rounds > 0:
             computer_choice = self.get_computer_choice()
             user_choice = self.get_user_choice()
             self.get_winner(computer_choice, user_choice)
-            self.num_of_rounds -= 1
-            if self.num_of_rounds == 0:
+            number_of_rounds -= 1
+            if number_of_rounds == 0:
                 print('The round has ended. Do you wish to continue? (y/n)')
                 user_decision = input().lower()
                 if user_decision == 'y':
-                    self.num_of_rounds = number_of_rounds
+                    number_of_rounds = self.start_game() #reset the number of rounds
                 elif user_decision == 'n':
-                    print("""Thank you for playing! The game is over now.""")
+                    print('Thank you for playing! The game is over now.')
 
+    def start_game(self):
+        number_of_rounds = self.num_of_rounds
+        return number_of_rounds
 
 rps = RPS(3)
 rps.play()
