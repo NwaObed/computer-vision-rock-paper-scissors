@@ -1,7 +1,7 @@
 # Computer Vision RPS
 
 ## Milestone 1
-The image model used in this project is trained using images of my hand with closed fist as ```rock,``` a fist with two fingers out as ```scissors``` and open palm as ```paper```. An image of these three objects are recorded and used to train the model which can predict the objects when shown to the camera. I am going to use the model to play the popular ```rock-paper-scissors game```. My goal is for the model to predict the user's choice and play with the computer,s random choice using the classic rules of the game.
+The image model used in this project is trained using images of a hand with closed fist as ```rock,``` a fist with two fingers out as ```scissors``` and an open palm as ```paper```. An image of these three objects are recorded and used to train the model which can predict the objects when shown to the camera. I am going to use the model to play the popular ```rock-paper-scissors game```. My goal is for the model to predict the user's choice and play with the computer's random choice using the classic rules of the game.
 
 ## Milestone 4
 In this milestone, the user selects one of the the three objects:```rock, paper``` or ```scissors```. Similarly, the computer randomly picks one the objects and the winner is determined using the following code snippets:
