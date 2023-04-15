@@ -1,10 +1,10 @@
 # Computer Vision RPS
 
 ## Milestone 1
-The image model used in this project is trained using images of my hand with closed fist as ```rock```, a fist with two fingers out as ```scissors``` and open palm as ```paper```. An image of these three objects are recorded and used to train the model which can predict the objects when shown to the camera. I am going to use the model to play the popular ```rock-paper-scissors game```. My goal is for the model to predict the users and choice and play with the computer using the classic rules of the game.
+The image model used in this project is trained using images of my hand with closed fist as ```rock,``` a fist with two fingers out as ```scissors``` and open palm as ```paper```. An image of these three objects are recorded and used to train the model which can predict the objects when shown to the camera. I am going to use the model to play the popular ```rock-paper-scissors game```. My goal is for the model to predict the user's choice and play with the computer,s random choice using the classic rules of the game.
 
 ## Milestone 4
-In this milestone, the user selects one of the the three objects -- ```rock, paper``` or ```scissors```. Similarly, the computer randomly picks one the objects and the winner is picked using the following code snippets:
+In this milestone, the user selects one of the the three objects:```rock, paper``` or ```scissors```. Similarly, the computer randomly picks one the objects and the winner is determined using the following code snippets:
 
 ```python
 def get_winner(computer_choice, user_choice):
@@ -29,7 +29,7 @@ def get_winner(computer_choice, user_choice):
 ```
 
 ## Milestone 5
-In this final milestone, I implemented the RPS ```class``` initiating the value of two class variables ```computer_wins``` and ```user_wins``` that keeps records of the game scoreboard. When a player wins three rounds, the round ends and the player can chose to end the game or continue. The game can reset using the following code:
+In this final milestone, I implemented the RPS ```class``` initiating the value of two class variables ```computer_wins``` and ```user_wins``` that keeps records of the game scoreboard. A round is complete when a player or computer wins three times, then the player can chose to end the game or continue. The game can reset using the following code:
 
 ```python
 if self.computer_wins == 3 or self.user_wins == 3:
