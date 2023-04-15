@@ -29,7 +29,7 @@ while True:
     print(nSecond)
     if nSecond < totalSec:
         strS = strSec[nSecond]
-    frame = cv2.putText(frame, str(nSecond), (200, 250),cv2.FONT_HERSHEY_SIMPLEX,4,(256,0,0))
+    frame = cv2.putText(frame, 'OK', (200, 250),cv2.FONT_HERSHEY_DUPLEX,5,(256,0,0))
     cv2.imshow('frame', frame)
     # Press q to close the window
     #print(prediction)
