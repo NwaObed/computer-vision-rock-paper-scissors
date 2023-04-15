@@ -28,7 +28,7 @@ def get_winner(computer_choice, user_choice):
         print('You won')
 ```
 
-##Milestone 5
+## Milestone 5
 In this final milestone, I implemented the RPS ```class``` initiating the value of two class variables ```computer_wins``` and ```user_wins``` that keeps records of the game scoreboard. When a player wins three rounds, the round ends and the player can chose to end the game or continue. The game can reset using the following code:
 
 ```python
