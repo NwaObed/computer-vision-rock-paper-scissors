@@ -1,6 +1,6 @@
 # Computer Vision RPS
 ## Description
-This project implements the rock-paper-scissor game using computer vision. In the Computer Vision Game folder, the model was trained and saved in the `keras_model.h5` file using [trainable machine](https://teachablemachine.withgoogle.com/). ```milestone_5.py``` is the main project file where the game is implemented.
+This project implements the rock-paper-scissor game using computer vision. In the Computer Vision Game folder, the model was trained and saved in the `keras_model.h5` file using [trainable machine](https://teachablemachine.withgoogle.com/). ```milestone_5.py``` is the main project file where the game is implemented. The ```Data``` folder contains the images used to train the model.
 
 ## Milestone 1
 The image model used in this project is trained using images of a hand with closed fist as ```rock,``` a fist with two fingers out as ```scissors``` and an open palm as ```paper```. An image of these three objects are recorded and used to train the model which can predict the objects when shown to the camera. I am going to use the model to play the popular ```rock-paper-scissors game```. My goal is for the model to predict the user's choice and play with the computer's random choice using the classic rules of the game.
