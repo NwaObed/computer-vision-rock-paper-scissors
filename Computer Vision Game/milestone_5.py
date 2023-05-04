@@ -59,7 +59,7 @@ class Rps:
         start_time = time.time()
         while time.time() - start_time <= 5: 
             time_counter = 5 - int(time.time() - start_time)
-            frame = self.resize_image(cap)[1]
+            data, frame = self.resize_image(cap)
             if time_counter == 2:
                 #print the timer on screen
                 frame = cv2.putText(frame, 'GO!', (200, 250),cv2.FONT_HERSHEY_DUPLEX,5,(256,0,0))
@@ -84,7 +84,7 @@ class Rps:
         p = np.argmax(prediction)
         #labels = self.label()
         #print(f'You chose {labels[p]}')
-        frame = self.resize_image(cap)#
+        #frame = self.resize_image(cap)#
         cv2.putText(frame, 'Your chose', (200, 250),cv2.FONT_HERSHEY_DUPLEX,5,(256,0,0))
         cv2.imshow('frame', frame)
         return labels[p]#.split()[1]
@@ -148,6 +148,7 @@ class Rps:
                     print('Thank you for playing! The game is over now.')
                     break
             cap = self.capture_image()
+            self.countdown_timer(cap) #print timer on screen
             user_choice = self.get_prediction(cap)
             computer_choice = random.choice(labels)
             print(user_choice)
